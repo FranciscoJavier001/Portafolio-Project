@@ -8,10 +8,10 @@ import { getHeroesByName } from "../helpers";
 export const SearchPage = () => {
   //* Funcion de Flecha que no recibe Nada */
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  const navigate = useNavigate(); //* Hook para navegar entre direcciones */
+  const location = useLocation(); //* Hook, que usa useEffect para estar pendientes con los cambios, de la busqueda por url */
 
-  const { q = "" } = queryString.parse(location.search);
+  const { q = "" } = queryString.parse(location.search); //* Crea una variable vacia, analiza de la url lo que dice este campo */
   const heroes = getHeroesByName(q);
 
   const showSearch = q.length === 0;
@@ -54,13 +54,6 @@ export const SearchPage = () => {
         <div className="col-7">
           <h4>Results</h4>
           <hr />
-
-          {/* {
-              ( q === '' )
-                ? <div className="alert alert-primary">Search a hero</div>
-                : ( heroes.length === 0 ) 
-                  && <div className="alert alert-danger">No hero with <b>{ q }</b></div>
-            } */}
 
           <div
             className="alert alert-primary animate__animated animate__fadeIn"
