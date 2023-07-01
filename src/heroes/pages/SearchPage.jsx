@@ -12,13 +12,14 @@ export const SearchPage = () => {
   const location = useLocation(); //* Hook, que usa useEffect para estar pendientes con los cambios, de la busqueda por url */
 
   const { q = "" } = queryString.parse(location.search); //* Crea una variable vacia, analiza de la url lo que dice este campo */
-  const heroes = getHeroesByName(q);
+  const heroes = getHeroesByName(q); //* Variable, que invoca un archivo y le lo que viene en q en el url */
 
-  const showSearch = q.length === 0;
-  const showError = q.length > 0 && heroes.length === 0;
+  const showSearch = q.length === 0; //* Creo una vartiable, que sea la busqueda, pero vacia */
+  const showError = q.length > 0 && heroes.length === 0; //* Creo una variable, que cuando q sea mayor a 0 y heroes igual a nada */
 
   const { searchText, onInputChange } = useForm({
-    searchText: q,
+    //* Creo una nueva variable, que se lea cuando cambie el campo de texto con el hook useForm */
+    searchText: q, //* Cuando el campo de texto, valga lo mismo que q */
   });
 
   const onSearchSubmit = (event) => {
