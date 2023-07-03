@@ -29,14 +29,16 @@ export const SearchPage = () => {
   };
 
   return (
+    //* Retorno */
     <>
-      <h1>Search</h1>
-      <hr />
-
+      {/* Para meterle formato al DOM */}
+      <h1>PaginaBusqueda</h1> {/* Titulo en la pagina */}
+      <hr /> {/* Una raya */}
       <div className="row">
+        {/* Nueva fila */}
         <div className="col-5">
-          <h4>Searching</h4>
-          <hr />
+          <h4>Busqueda</h4> {/* Es el subtitulo */}
+          <hr /> {/* Otra raya */}
           <form onSubmit={onSearchSubmit} aria-label="form">
             <input
               type="text"
@@ -51,7 +53,6 @@ export const SearchPage = () => {
             <button className="btn btn-outline-primary mt-1">Search</button>
           </form>
         </div>
-
         <div className="col-7">
           <h4>Results</h4>
           <hr />
