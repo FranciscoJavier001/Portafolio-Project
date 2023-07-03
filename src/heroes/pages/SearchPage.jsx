@@ -32,33 +32,38 @@ export const SearchPage = () => {
     //* Retorno */
     <>
       {/* Para meterle formato al DOM */}
-      <h1>PaginaBusqueda</h1> {/* Titulo en la pagina */}
+      <h1>PaginaBusqueda</h1>
+      {/* Titulo en la pagina */}
       <hr /> {/* Una raya */}
       <div className="row">
         {/* Nueva fila */}
         <div className="col-5">
-          <h4>Busqueda</h4> {/* Es el subtitulo */}
+          {/* Espacio de lo que va a medir todo lo que esta dentro de este div */}
+          <h4 className="text-center">Busqueda</h4>
+          {/* Es el subtitulo */}
           <hr /> {/* Otra raya */}
           <form onSubmit={onSearchSubmit} aria-label="form">
-            <input
-              type="text"
-              placeholder="Search a hero"
-              className="form-control"
-              name="searchText"
-              autoComplete="off"
-              value={searchText}
-              onChange={onInputChange}
+            {/* Formulario, que recibe un evento y su tipografia */}
+            <input //* Ahora al campo de busqueda */
+              type="text" //* Lo que recibe es texto */
+              placeholder="Busca un Heroe" //* Lo que dice escrito como de fondo */
+              className="form-control" //* Va a tomar esto que al parecer ya esta definido, lo utilizo para usar todo el ancho del espacio */
+              name="searchText" //* Asi se va a llamar este campo */
+              autoComplete="off" //* No vas a autocompletar */
+              value={searchText} //* Este es el nombre del campo, y tambien este es su valor, asi se lo asigno */
+              onChange={onInputChange} //* Si preciono el Enter, automaticamente inicia la busqueda */
             />
-
-            <button className="btn btn-outline-primary mt-1">Search</button>
+            <button className="btn btn-outline-primary mt-1 form-control">
+              Search
+            </button>
           </form>
         </div>
         <div className="col-7">
-          <h4>Results</h4>
+          <h4 className="text-center">Results</h4>
           <hr />
 
           <div
-            className="alert alert-primary animate__animated animate__fadeIn"
+            className="alert alert-primary animate__animated animate__fadeIn text-center"
             style={{ display: showSearch ? "" : "none" }}>
             Search a hero
           </div>
