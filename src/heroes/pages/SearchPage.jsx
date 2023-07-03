@@ -23,9 +23,9 @@ export const SearchPage = () => {
   });
 
   const onSearchSubmit = (event) => {
-    event.preventDefault();
-    // if ( searchText.trim().length <= 1 ) return;
-    navigate(`?q=${searchText}`);
+    //* Cuando hagan click en el boton de buscar */
+    event.preventDefault(); //* No actualices la pagina */
+    navigate(`?q=${searchText}`); //* Pero navega a lo que esta despues de la q= en la url */
   };
 
   return (
