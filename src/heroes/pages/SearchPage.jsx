@@ -60,22 +60,21 @@ export const SearchPage = () => {
           </form>
         </div>
         <div className="col-7">
-          <h4 className="text-center">Results</h4>
-          <hr />
-
+          {/* Quedaban 7 espacios, los asigno aqui */}
+          <h4 className="text-center">Resultados</h4>
+          {/* Es un titulo en el espacio resultante con texto */}
+          <hr /> {/* Simplemente es una linea horizontal */}
           <div
             className="alert alert-primary animate__animated animate__fadeIn text-center"
             style={{ display: showSearch ? "" : "none" }}>
             Search a hero
           </div>
-
           <div
             aria-label="alert-danger"
             className="alert alert-danger animate__animated animate__fadeIn"
             style={{ display: showError ? "" : "none" }}>
             No hero with <b>{q}</b>
           </div>
-
           {heroes.map((hero) => (
             <HeroCard key={hero.id} {...hero} />
           ))}
