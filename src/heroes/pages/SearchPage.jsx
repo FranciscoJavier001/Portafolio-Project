@@ -54,7 +54,8 @@ export const SearchPage = () => {
               onChange={onInputChange} //* Si preciono el Enter, automaticamente inicia la busqueda */
             />
             <button className="btn btn-outline-primary mt-1 form-control">
-              Search
+              {/* Boton que ocupa todo el espacio */}
+              Buscar {/* Texto que dice el boton */}
             </button>
           </form>
         </div>
