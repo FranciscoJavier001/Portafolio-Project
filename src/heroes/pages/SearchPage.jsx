@@ -67,7 +67,7 @@ export const SearchPage = () => {
           <div
             className="alert alert-primary animate__animated animate__fadeIn text-center"
             style={{ display: showSearch ? "" : "none" }}>
-            Search a hero
+            Busca un Heroe {/* Es un texto */}
           </div>
           <div
             aria-label="alert-danger"
