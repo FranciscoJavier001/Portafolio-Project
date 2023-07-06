@@ -43,7 +43,7 @@ export const SearchPage = () => {
           {/* Es el subtitulo */}
           <hr /> {/* Otra raya */}
           <form onSubmit={onSearchSubmit} aria-label="form">
-            {/* Formulario, que recibe un evento y su tipografia */}
+            {/* Formulario, que recibe un evento y le damos estilos al formulario definidos */}
             <input //* Ahora al campo de busqueda */
               type="text" //* Lo que recibe es texto */
               placeholder="Busca un Heroe" //* Lo que dice escrito como de fondo */
@@ -65,15 +65,18 @@ export const SearchPage = () => {
           {/* Es un titulo en el espacio resultante con texto */}
           <hr /> {/* Simplemente es una linea horizontal */}
           <div
-            className="alert alert-primary animate__animated animate__fadeIn text-center"
+            className="alert alert-primary animate__animated animate__fadeIn text-center" //* Division Azul del cuadro de busqueda */
             style={{ display: showSearch ? "" : "none" }}>
+            {/* Campo de busqueda vacio, muestro recuadro azul, o si hay busqueda lo desaparezco */}
             Busca un Heroe {/* Es un texto */}
           </div>
           <div
-            aria-label="alert-danger"
-            className="alert alert-danger animate__animated animate__fadeIn"
+            aria-label="alert-danger" //* Son estilos definidos para este campo */
+            className="alert alert-danger animate__animated animate__fadeIn text-center" //* Division del cuadro rojo con estilos definidos */
             style={{ display: showError ? "" : "none" }}>
-            No hero with <b>{q}</b>
+            {/* Si no encuentra nada que se muestre, pero si encuentra algo que desaparezca */}
+            No Encontre Ningun Heroe con la letra <b>{`"${q}"`}</b>
+            {/* Esto es un texto */}
           </div>
           {heroes.map((hero) => (
             <HeroCard key={hero.id} {...hero} />
