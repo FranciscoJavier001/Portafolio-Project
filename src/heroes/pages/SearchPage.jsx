@@ -78,9 +78,14 @@ export const SearchPage = () => {
             No Encontre Ningun Heroe con la letra <b>{`"${q}"`}</b>
             {/* Esto es un texto */}
           </div>
-          {heroes.map((hero) => (
-            <HeroCard key={hero.id} {...hero} />
-          ))}
+          {heroes.map(
+            //* Voy a mapear el arreglo de heroes */
+            (
+              hero //* Recibo la variable hero */
+            ) => (
+              <HeroCard key={hero.id} {...hero} /> //* Renderizo este componente, la llave va a ser el "id" y muestro todos los resultados */
+            )
+          )}
         </div>
       </div>
     </>
