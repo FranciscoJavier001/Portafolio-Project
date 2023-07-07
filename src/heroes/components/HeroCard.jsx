@@ -29,10 +29,6 @@ export const HeroCard = ({
               <h5 className="card-title">{superhero}</h5>
               <p className="card-text">{alter_ego}</p>
 
-              {/* {
-                                ( alter_ego !== characters ) && charactesByHero
-                                ( alter_ego !== characters ) && <p>{ characters }</p>
-                            } */}
               <CharactersByHero characters={characters} alter_ego={alter_ego} />
 
               <p className="card-text">
