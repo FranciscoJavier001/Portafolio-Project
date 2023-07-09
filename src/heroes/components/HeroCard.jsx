@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 
 const CharactersByHero = ({ alter_ego, characters }) => {
-  return alter_ego === characters ? (
+  //* Variable que recibe dos parametros pero exclusivos */
+  return alter_ego === characters ? ( //* Lo que retorno, es decir, cuando el alter y el character sean iguales */
     <p>
-      <br />
+      {/* Un Parrafo */}
+      <br /> {/* Un espacio en blanco */}
     </p>
   ) : (
-    <p>{`${characters.substring(0, 25)}`}...</p>
+    //* En caso contrario */
+    <p>{`${characters.substring(0, 25)}`}...</p> //* En caso que lo mostremos, solo muestra hasta la letra 25 y despues pon ... */
   );
 };
 
