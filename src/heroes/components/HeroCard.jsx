@@ -26,24 +26,32 @@ export const HeroCard = ({
   return (
     //* Esto es lo que voy a retornar */
     <div className="col animate__animated animate__fadeIn">
+      {/* Clases de Animate */}
       <div className="card">
+        {/* Para poner las tarjetas en cada tarjeta */}
         <div className="row no-gutters">
+          {/* Voy a crear una nueva fila, sin espacios */}
           <div className="col-5">
+            {/* De la nueva que se creo, voy a ocupar 5 de espacio */}
             <img src={heroImageUrl} className="card-img" alt={superhero} />
+            {/* Etiqueta Imagen que llama la variable imagen con una clase */}
           </div>
-
           <div className="col-7">
+            {/* Aqui estan los otros espacios que faltaban de los 12 */}
             <div className="card-body">
+              {/* Este es el cuerpo de la tarjeta y le voy a meter info */}
               <h5 className="card-title">{superhero}</h5>
-              <p className="card-text">{alter_ego}</p>
-
+              {/* Titulo del super heroe */}
+              <p className="card-text">{alter_ego}</p> {/* El nombre */}
               <CharactersByHero characters={characters} alter_ego={alter_ego} />
-
+              {/* Esta esta definida en busqueda con logica interna */}
               <p className="card-text">
+                {/* Mas texto */}
                 <small className="text-muted">{first_appearance}</small>
+                {/* Que salga esta info */}
               </p>
-
               <Link to={`/hero/${id}`}>Más..</Link>
+              {/* Cuando piquen mas los dirreccionamos a la info completa del heroe */}
             </div>
           </div>
         </div>
