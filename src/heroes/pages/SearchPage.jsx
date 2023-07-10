@@ -32,8 +32,8 @@ export const SearchPage = () => {
     //* Retorno */
     <>
       {/* Para meterle formato al DOM */}
-      <h1>PaginaBusqueda</h1>
-      {/* Titulo en la pagina */}
+      <h1 className="text-center">PaginaBusqueda</h1>
+      {/* Titulo en la pagina, lo coloco al centro */}
       <hr /> {/* Una raya */}
       <div className="row">
         {/* Nueva fila */}
