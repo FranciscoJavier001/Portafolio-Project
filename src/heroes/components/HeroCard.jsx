@@ -25,8 +25,8 @@ export const HeroCard = ({
 
   return (
     //* Esto es lo que voy a retornar */
-    <div className="col animate__animated animate__fadeIn">
-      {/* Clases de Animate */}
+    <div className="col animate__animated animate__fadeIn mb-3">
+      {/* Clases de Animate y dejo espacio en la busqueda entre elementos */}
       <div className="card">
         {/* Para poner las tarjetas en cada tarjeta */}
         <div className="row no-gutters">
