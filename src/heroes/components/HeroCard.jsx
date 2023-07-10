@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; //* Para cambiar de pagina cuando le den al mas */
 
 const CharactersByHero = ({ alter_ego, characters }) => {
   //* Variable que recibe dos parametros pero exclusivos */
