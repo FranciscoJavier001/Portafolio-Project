@@ -3,6 +3,7 @@ import { Navigate, useNavigate, useParams } from "react-router-dom"; //* Es de R
 import { getHeroById } from "../helpers"; //* Logica del id de Heroes */
 
 export const HeroPage = () => {
+  //* Exportamos esta funcion que no recibe nada */
   const { id } = useParams();
   const navigate = useNavigate();
 
