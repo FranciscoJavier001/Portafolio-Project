@@ -9,7 +9,7 @@ export const HeroesRoutes = () => {
     <>
       <Navbar /> {/* Renderizo este Componente Funcional */}
       <div className="container">
-        {/* Div con la clase Container */}
+        {/* Div con la clase Container, donde van las tarjetas de los superheroes */}
         <Routes>
           {/* Rutas */}
           <Route path="marvel" element={<MarvelPage />} />
