@@ -1,3 +1,1 @@
-
-
-export * from './Navbar';
+export * from "./Navbar"; //* Exporto este Componente Funcionale */
