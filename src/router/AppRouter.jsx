@@ -7,7 +7,7 @@ export const AppRouter = () => {
     //* Lo que voy a renderizar */
     <>
       <Routes>
-        {/* Invocamos a las turas */}
+        {/* Invocamos a las ruras */}
         <Route path="/*" element={<HeroesRoutes />} />
         {/* Lo que sea la ruta que renderize el Elemento HeroesRoutes */}
       </Routes>
