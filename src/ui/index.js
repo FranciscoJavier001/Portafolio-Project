@@ -1,1 +1,1 @@
-export * from "./components";
+export * from "./components"; //* Exporto este Componente Funcional */
