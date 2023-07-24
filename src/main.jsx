@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom"; //* Importacion para navegar e
 import { HeroesApp } from "./HeroesApp"; //* Logica de este Componente Funcional */
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  //* Como voy a renderzar en el VirtualDom */
+  //* Como voy a renderzar en el VirtualDom y donde */
   <React.StrictMode>
     {/* Aplicamos el modo estricto */}
     <BrowserRouter>
