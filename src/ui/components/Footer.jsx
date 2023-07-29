@@ -16,3 +16,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+//* ESTILOS PARA ESTOS ELEMENTO, UN LINK, UN HOVER */
