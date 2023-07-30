@@ -10,9 +10,24 @@ export const FooterPosition = () => {
       <br />
       Fecha Actual: <span></span>
       <br />
-      <BsLinkedin />
-      <BiCodeAlt />
-      <BsGithub />
+      <a
+        href="https://www.linkedin.com/in/francisco-javier-martinez-duran-92055b275"
+        target="_blank"
+        rel="noopener noreferrer">
+        <BsLinkedin />
+      </a>
+      <a
+        href="https://github.com/FranciscoJavier001/Portafolio-Project"
+        target="_blank"
+        rel="noopener noreferrer">
+        <BiCodeAlt />
+      </a>
+      <a
+        href="https://github.com/FranciscoJavier001"
+        target="_blank"
+        rel="noopener noreferrer">
+        <BsGithub />
+      </a>
     </footer>
   );
 };
