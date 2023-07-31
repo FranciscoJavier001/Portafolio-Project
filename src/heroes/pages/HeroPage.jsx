@@ -1,7 +1,7 @@
 import { useMemo } from "react"; //* Es un Hook */
 import { Navigate, useNavigate, useParams } from "react-router-dom"; //* Es de RRD */
 import { getHeroById } from "../helpers"; //* Logica del id de Heroes */
-import { FooterPosition } from "../../ui";
+import { Footer } from "../../ui"; //* Componente a Renderizar */
 
 export const HeroPage = () => {
   //* Exportamos esta funcion que no recibe nada */
@@ -69,10 +69,15 @@ export const HeroPage = () => {
           </div>
         </div>
       </div>
-      <div className="m-5">
-        <br />
+      <div className="other-element" style={{ minHeight: "18vh" }}>
+        {/* Defino una nueva clase y le asigno un tamaño minimo */}
+        <br /> {/* Le doy un espacio a esta etiqueta */}
       </div>
-      <FooterPosition />
+
+      <div className="fixed-bottom">
+        {/* Mantengo lo que esta en esta etiqueta hasta abajo */}
+        <Footer /> {/* Lo que voy a Renderizar */}
+      </div>
     </>
   );
 };
