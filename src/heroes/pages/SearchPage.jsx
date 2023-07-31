@@ -4,7 +4,7 @@ import queryString from "query-string";
 import { useForm } from "../../hooks/useForm";
 import { HeroCard } from "../components";
 import { getHeroesByName } from "../helpers";
-import { FooterPosition } from "../../ui";
+import { FooterPosition, FooterSearch } from "../../ui"; //* Renderizo estos componentes */
 
 export const SearchPage = () => {
   //* Funcion de Flecha que no recibe Nada */
@@ -17,6 +17,7 @@ export const SearchPage = () => {
 
   const showSearch = q.length === 0; //* Creo una vartiable, que sea la busqueda, pero vacia */
   const showError = q.length > 0 && heroes.length === 0; //* Creo una variable, que cuando q sea mayor a 0 y heroes igual a nada */
+  const showFooter = q.length > 0 && heroes.length >= 2; //* Creo una variable, que cuando q sea mayor a 0 y heroes mayor a 2 en el arreglo */
 
   const { searchText, onInputChange } = useForm({
     //* Creo una nueva variable, que se lea cuando cambie el campo de texto con el hook useForm */
@@ -91,10 +92,13 @@ export const SearchPage = () => {
           </div>
         </div>
       </div>
-      <div className="m-5">
-        <br />
+      <div className="other-element"></div>
+      {/* Nueva etiqueta con una clase para formatear todo */}
+      <div>
+        {/* Nueva etiqueta */}
+        <div>{showFooter ? <FooterPosition /> : <FooterSearch />}</div>
+        {/* Operador ternario para ver que componente renderizamos */}
       </div>
-      <FooterPosition />
     </>
   );
 };
