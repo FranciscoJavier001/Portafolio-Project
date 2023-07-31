@@ -9,6 +9,23 @@ const ATagLink = styled.a`
   margin: 1rem; /* Separacion de los iconos sociables */
   font-size: 1.9rem; /* Tamaño de cada elemento */
   line-height: 3vh; /* Espacio de cada linea */
+
+  &:hover {
+    filter: saturate(100%) brightness(150%); /* Saturarlos y aumenta el brillo */
+    transition-duration: 1.5s; /* Duracion de la transicion */
+  }
+`;
+
+const StyleIconLinkedIn = styled(BiLogoLinkedin)`
+  color: rgb(33, 56, 205);
+`;
+
+const StyleIconCode = styled(PiCodeBold)`
+  color: rgb(59, 57, 60);
+`;
+
+const StyleIconGithub = styled(BsGithub)`
+  color: #4424e0;
 `;
 
 export const FooterPosition = () => {
@@ -24,22 +41,20 @@ export const FooterPosition = () => {
         href="https://www.linkedin.com/in/francisco-javier-martinez-duran-92055b275"
         target="_blank"
         rel="noopener noreferrer">
-        <BiLogoLinkedin />
+        <StyleIconLinkedIn />
       </ATagLink>
       <ATagLink
         href="https://github.com/FranciscoJavier001/Portafolio-Project"
         target="_blank"
         rel="noopener noreferrer">
-        <PiCodeBold />
+        <StyleIconCode />
       </ATagLink>
       <ATagLink
         href="https://github.com/FranciscoJavier001"
         target="_blank"
         rel="noopener noreferrer">
-        <BsGithub />
+        <StyleIconGithub />
       </ATagLink>
     </footer>
   );
 };
-
-//* Hay que instalar Stuled-components */
