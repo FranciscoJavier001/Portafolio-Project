@@ -1,10 +1,11 @@
-import { BsGithub } from "react-icons/bs";
-import { BiLogoLinkedin } from "react-icons/bi";
-import { PiCodeBold } from "react-icons/pi";
+import { BsGithub } from "react-icons/bs"; //* Importo iconos de React-Icons */
+import { BiLogoLinkedin } from "react-icons/bi"; //* Importo iconos de React-Icons */
+import { PiCodeBold } from "react-icons/pi"; //* Importo iconos de React-Icons */
 
-import styled from "styled-components";
+import styled from "styled-components"; //* Importo para usar Styled-Components */
 
 const ATagLink = styled.a`
+  //* A etiquetas <a> les voy a asignar estos estilos */
   color: white; /* La tipografia de las letras es blanca */
   margin: 1rem; /* Separacion de los iconos sociables */
   font-size: 1.9rem; /* Tamaño de cada elemento */
