@@ -93,11 +93,12 @@ export const SearchPage = () => {
         </div>
       </div>
       <div className="other-element"></div>
+      {/* Una etiqueta para limpiar todo lo pasado */}
       {/* Nueva etiqueta con una clase para formatear todo */}
       <div>
         {/* Nueva etiqueta */}
         <div>{showFooter ? <FooterPosition /> : <FooterSearch />}</div>
-        {/* Operador ternario para ver que componente renderizamos */}
+        {/* Nueva Etiqueta con operador ternario para ver que componente renderizamos */}
       </div>
     </>
   );
