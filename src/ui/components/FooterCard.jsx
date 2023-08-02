@@ -12,6 +12,7 @@ const ATagLink = styled.a`
   line-height: 3vh; /* Espacio de cada linea */
 
   &:hover {
+    //* Cuando se les pase el mouse por encima */
     filter: saturate(100%) brightness(150%); /* Saturarlos y aumenta el brillo */
     transition-duration: 1.5s; /* Duracion de la transicion */
   }
@@ -42,7 +43,7 @@ export const FooterCard = () => {
       {/* Para que todo quede en un bloque */}
       <footer className="bg-dark text-white text-center pt-1 pb-2 fixed-bottom">
         {/* Estilos del Footer con Bootstrap */}
-        &copy; Francisco Javier Martinez Duranº
+        &copy; Francisco Javier Martinez Duran
         {/* Simbolo Copyright y Nombre */}
         <br />
         {/* Un espacio */}
