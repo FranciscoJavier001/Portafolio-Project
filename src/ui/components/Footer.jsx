@@ -33,7 +33,7 @@ const StyleIconGithub = styled(BsGithub)`
   color: #a335f0; //* Cambio de color al Enlace de Github en morado */
 `;
 
-const horaEspecifica = new Date("2023-08-01 18:08:29");
+const horaEspecifica = new Date("2023-08-01 18:08:29"); //* Variable donde defino una hora especifica */
 
 export const Footer = () => {
   //* Funcion a Exportar */
@@ -60,7 +60,8 @@ export const Footer = () => {
         href="https://github.com/FranciscoJavier001/Portafolio-Project" //* Link a donde dirige */
         target="_blank">
         {/* Que sea una nueva pestaña */}
-        <StyleIconCode /> {/* Icono que se va a poner con estilos definidos */}
+        <StyleIconCode />
+        {/* Icono que se va a poner con estilos definidos */}
       </ATagLink>
       <ATagLink //* Nombre de etiqueta <a> con estilos de Style Components */
         href="https://github.com/FranciscoJavier001" //* Link a donde dirige */
