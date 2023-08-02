@@ -4,7 +4,7 @@ export const Navbar = () => {
   //* Variable a Exportar */
   return (
     //* Lo que voy a renderizar */
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       {/* Esta es la barra de navegacion con clases de Bootstrap */}
       <Link className="navbar-brand" to="/">
         {/* Es el Brand, osea el primer enlace */}
